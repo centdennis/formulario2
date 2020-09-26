@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario de Registro</title>
+		<!-- Etiqueta <link> nos permite enlazar el archivo estilos.css -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- Etiqueta <script> permite enlazar el archivo funciones.js -->
+		<script type="text/javascript" src="js/funciones.js"></script>
+	</head>
+	<body>
+		<!-- Atributo name: nombre que identifica a nuestro formulario
+			action: ruta de nuestro Servlet.
+			method="post" es el tipo de envío de datos (la información no se
+			visualizará)
+			onsubmit: contiene una función JavaScript -->
+		<form name="registrousuarios" action="/ManejoParametros/RegistroServlet" method="post"
+			onsubmit="return validarformulario(this)">
+			<table id="enfasis-columna">
+				<caption>
+					Registro de Usuario
+				</caption>
+				<tr>
+					<td class="columna">
+						Usuario: (*)
+					</td>
+					<td>
+						<input type="text" name="usuario" class="default" placeholder="Escribir su usuario" />
+					</td>
+				</tr>
+				<tr>
+					<td class="columna">
+						Contraseña: (*)
+					</td>
+					<td>
+						<input type="password" name="contrasena" class="default" placeholder="Escribir su contraseña" />
+					</td>
+				</tr>
+				<tr>
+					<td class="columna">
+						Desarrollo Web: (*)
+					</td>
+					<td>
+						Php <input type="checkbox" name="web" value="php">
+						&nbsp;&nbsp;&nbsp;
+						Asp <input type="checkbox" name="web" value="asp">
+						&nbsp;&nbsp;&nbsp;
+						Java <input type="checkbox" name="web" value="java">
+						&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td class="columna">
+						Género: (*)
+					</td>
+					<td>
+						<input type="radio" name="genero" value="H">Masculino
+						&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="genero" value="M">Femenino
+					</td>
+				</tr>
+				<tr>
+					<td class="columna">
+						Programador: (*)
+					</td>
+					<td>
+						<select name="programador" class="default">
+							<option value="">Seleccionar</option>
+							<option value="1">Junior</option>
+							<option value="2">Semi-Senior</option>
+							<option value="3">Senior</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="columna">
+						Comentarios:
+					</td>
+					<td>
+						<textarea name="comentarios" class="default" cols="30" rows="2">
+						</textarea>
+					</td>
+				</tr>
+				<tr style="text-align:center">
+					<td>
+						<input type="submit" value="Enviar" class="default"> 
+					</td>
+					<td>
+						<input type="reset" value="Limpiar" class="default">
+					</td>
+				</tr>	
+			</table>	
+		</form>
+	</body>
+</html>

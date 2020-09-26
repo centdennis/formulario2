@@ -1,0 +1,71 @@
+/*Aplicamos estilo a nuestro Body y a todas las etiquetas input, select,
+textarea, cuyo atributo class sea igual a default */
+body, .default {
+	line-height: 1.6em;/*Permite ampliar y separar cada elemento del Formulario.*/
+	font-size: 12px; /*Tamaño de letra*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Sans-Serif";/*Nuestro navegador
+				aplicará la primera fuente de la lista que esté instalada en nuestra PC.
+				Es conveniente incluir en último lugar una de las fuentes genéricas, por siacaso
+				el resto de Fuente no estuvieran instaladas*/
+}
+
+/*Estilo que se aplicará a toda la Tabla*/
+#enfasis-columna {
+	margin: 45px;/*Sirve para establecer un espacio Superior, Inferior, Derecha e Izquierda del
+				elemento (Body)*/
+	width: 480px;/*Ancho de la tabla.*/
+	border-collapse: collapse; /*Permite configurar que no exista espacio entre los reglones
+								y las columnas de la tabla*/
+}
+
+/*Estilo que se aplicará al título que se encuentra dentro de la Tabla*/
+#enfasis-columna caption {
+	font-size: 20px; /*Tamaño de letra*/
+	margin-bottom: 15px; /*Espacio inferior del elemento*/
+}
+
+/*Estilo que se aplicará al contenido de cada <td>*/
+#enfasis-columna td {
+	padding: 10px 15px; /*Espacio superior e inferior de 10 pixeles y 15 pixeles de izquierda a
+						derecha de cada <td> con respecto a la Tabla*/ 
+	color: #669;
+	border-top: 1px solid #e8edff;
+	
+}
+
+.columna {
+	background: #d0dafd;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+	
+	
+}
+
+#enfasis-columna tr:hover td {
+	color: #339; 
+	background: #eff2ff;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

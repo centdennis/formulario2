@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ingreso al Sistema</title>
+	</head>
+	<body>
+		<h1>Acceso al Sistema</h1>
+		<!-- Atributo name permite identificar a nuestro Formulario 
+			action nos permite acceder a nuestro Servlet, desde el index.html
+			method="post" es el tipo de envío de datos, el cual permite que
+			la información no se visualice en la url del navegador.-->
+		<form name="login" action="/ManejoParametros/LoginServlet" method="post">
+			Usuario: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="usuario" />
+			<br />
+			<br />
+			Contraseña: <input type="password" name="contrasena" />
+			<br />
+			<br />
+			<input type="submit" value="Ingresar">
+		</form>
+		<br />
+		<br />
+		<!-- La etiqueta <a> permite agregar un enlace, link a nuestra página web.
+			El atributo href nos permite agregar la página a la cual va a llevar al
+			usuario, cuando este de clic en el enlace. -->
+		<a href="registro.html">No está registrado? Clic aquí</a>
+	</body>
+</html>
